@@ -14,16 +14,15 @@
         <img src="Screenshot_2024-06-03_112636-removebg-preview.png">
 
         <nav class="navbar">
-            <a href="#" class="active" > Portfolio</a>
-            <a href="#" > About Me</a>
-            <a href="#" > Contact Me</a>
-            <a href="#" > Projects</a>
-            <a href="#" > Eduction</a>
+            <a href="#home" class="active" > Portfolio</a>
+            <a href="#about" > About Me</a>
+            <a href="#contact-form" > Contact Me</a>
+            <a href="#projects" > Projects</a>
             
         </nav>
         <a href="#" class="contact">Contact Me</a>
     </header>
-    <section class="home">
+    <section class="home" id="home" data-color="rgb(241, 241, 241)">
         <div class="home-content">
             <h3>Hi</h3>
 
@@ -39,7 +38,7 @@
             <img src="Mehh.jpg" id="img">
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about" data-color="black">
         <div class="about-img">
             <img src="Mehh.jpg" >
         </div>
@@ -50,17 +49,53 @@
             <a href="#" class="btn-2">Experience</a>
         </div>
     </section>
-    <section class="contact-form">
+    <section id="projects" class="projects" data-color="#F5B301">
+        <h1 class="cont">Projects</h1>
+
+        <div class="project-cards">
+            <div class="card">
+                <img src="https://github.com/user-attachments/assets/097091d4-84da-4379-9207-f8b2b3e89859" alt="Project 1 Image">
+                <h3>Farm Management System</h3>
+                <p>An iot based realtime data monitoring ,here is the frontend overview of our project.</p>
+                <div class="links">
+                    <a href="https://github.com/poojitha-urlana/front-end-duo" target="_blank" class="btn-link">View Code</a>
+                    <a href="https://farming-frontend-demo.vercel.app/" target="_blank" class="btn-link">Live Demo</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://github.com/user-attachments/assets/3b922035-f2c4-453f-8094-084de0f8ace9" alt="Project 2 Image">
+                <h3>Techayo-Ecommerce website</h3>
+                <p>An Ecommerce Website Designed Based On Electric Devices Sale's.Its developed using ReactJs .</p>
+                <div class="links">
+                    <a href="https://github.com/220101120198/React-Ecommerce" target="_blank" class="btn-link">View Code</a>
+                    <a href="https://react-ecommerce-sandy-mu.vercel.app/" target="_blank" class="btn-link">Live Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://github.com/user-attachments/assets/21c2fed7-6845-4891-98fe-27f57acc0d95" alt="Project 2 Image">
+                <h3>Tic-Tac-Toe Game</h3>
+                <p>This project enhanced my frontend development skills, combining HTML, CSS, and JavaScript to build a user-friendly and interactive app</p>
+                <div class="links">
+                    <a href="https://github.com/220101120198/Tica-Tac-ToeWebApplication" target="_blank" class="btn-link">View Code</a>
+                    <a href="https://tica-tac-toe-web-application.vercel.app/" target="_blank" class="btn-link">Live Demo</a>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+    
+    <section class="contact-form" id="contact-form" data-color="black">
         <h2 class="contact-me">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form action="#" class="cntct">
             <div class="input-box">
                <input type="text " placeholder="Full Name">
                <input type="email" placeholder="Email">   
             </div>
             <div class="input-box">
                 <input type="nymber" placeholder="Phone Number">
-                <input type="submit" value="Send Message" placeholder="Subject">
             </div>
             <textarea name="" id="" cols="30"
             rows="10" placeholder="Your message"></textarea>
@@ -97,5 +132,6 @@
 
         <p class="copyright"> © 2024 chandu | All Rights Reserved</p>
     </footr>
+    <script src="JavaScript.js"></script>
 </body>
 </html>
